@@ -9,7 +9,7 @@
         _init: function()
         {
             if (!window.name) {
-                window.name = Math.random();
+                window.name = window.location.hostname;
             }
             this._id = window.name;
             this._initCache();
